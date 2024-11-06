@@ -1,0 +1,13 @@
+<h1>Welcome to my Spring Boot demo project!</h1>
+<p>
+    Here you can find your favourite videos!
+</p>
+<ul>
+    {{#videos}}
+        <li>{{name}}</li>
+    {{/videos}}
+</ul>
+<form action="/new-video" method="post">
+    <input type="text" name="name">
+    <button type="submit">Submit</button>
+</form>
